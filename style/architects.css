@@ -52,12 +52,65 @@ font-size: 2.8rem;
     border-radius: 8px;
     font-size: 1.25rem;
 }
+
+.teams{
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.teams{
+    margin-top: 130px;
+}
+.our-features{
+    margin-left: 73px;
+    max-width: 537px;
+}
+#quicklist{
+    font-weight: 500;
+    font-size: 2.8rem;
+    color: #727272;
+}
+#ofour{
+    font-weight: 700;
+    font-size: 2.8rem;
+ } 
+#features{
+        font-weight: 700;
+        font-size: 2.8rem;
+        color: #FF900E;
+    }
+
+    .features-description{
+        color: #727272;
+    }
+
+    .team-image-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 24px;
+    }
 .banner-image{
     width: 100%;
 }
 
 @media screen and (max-width: 576px){
-    .navbar, .navbar li{
+    .navbar, .navbar li,.teams{
     flex-direction: column;
 }
+.team-image-container{
+    grid-template-columns: repeat(1,1fr);
+}
+.our-features{
+margin-left: 20px;
+}
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 50px auto;
+    }
 }
